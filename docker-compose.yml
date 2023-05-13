@@ -1,0 +1,9 @@
+services:
+  builder:
+    build:
+      context: .
+    volumes:
+      - .:/workdir
+    platform: linux/amd64
+    working_dir: /workdir
+    entrypoint: /bin/bash
